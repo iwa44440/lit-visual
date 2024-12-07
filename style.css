@@ -1,0 +1,344 @@
+@charset "utf-8";
+body{
+  margin: 0;
+  padding: 0;
+  height: auto;
+  background: linear-gradient(to top,rgb(255, 83, 10),#f76b4b,rgb(255, 255, 255));
+  font-family: "Kaisei Decol", "Eagle Lake",serif;
+
+}
+header{
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  opacity: .9;
+  z-index: 20;
+}
+h1{
+  font-size: 8vw;
+}
+.header {
+  text-align: justify;
+  background: var(--background-navbar);
+  width: 100%;
+  height: 52px;
+  background-color: rgb(0, 0, 0);
+  margin: 0 auto;
+}
+/* Nav items */
+.menu {
+  list-style: none;
+  position: absolute;
+  width: 100%;
+  height:100vh;
+  top: 0;
+  margin-top: 52px;
+  padding: 0 0 10px 0;
+  clear: both;
+  background: rgb(202, 178, 178);
+  transition: 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.1008s;
+  transform: scale(1, 0);
+  transform-origin: top;
+  text-align: center;
+}
+/* Hamburger menu button */
+.menu-btn:checked ~ .menu {
+  transform: scale(1, 1);
+  transform-origin: top;
+  transition: 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.1008s;
+}
+/* Hamburger menu text */
+.menu a {
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 2px;
+  font-size: 32px;
+  text-transform: capitalize;
+  color: #030202;
+  font-weight: 600;
+  -webkit-text-stroke-color: #fff;
+  -webkit-text-stroke-width: .5px;
+  opacity: 0;
+  transition: 0.5s;
+}
+.menu li {
+  padding: 15px 0;
+  margin: 0 54px;
+  opacity: 0;
+  transition: 0.5s;
+  padding-bottom: 3px; /* テキストと下線の間隔 */
+  font-size: 24px;
+  background-image: linear-gradient(#000, #000);
+  background-repeat: no-repeat;
+  background-position: bottom right; /* 下線の初期位置 */
+  background-size: 0 2px; /* 下線のサイズ（横幅、高さ） */
+  transition: background-size 0.3s;
+}
+.menu li:hover {
+  background-position: bottom left; /* 下線のホバー時位置 */
+  background-size: 100% 1px; /* 下線の横幅を100%にする */
+}
+.menu-btn:checked ~ .menu a,
+.menu-btn:checked ~ .menu li {
+  opacity: 1;
+  transition: 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.2s;
+}
+.menu-btn {
+  display: none;
+}
+.menu-icon {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  padding: 24px 14px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.navicon {
+  background: #ffffff;
+
+  display: block;
+  height: 3px;
+  width: 26px;
+  position: relative;
+  transition: 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.1008s;
+}
+.navicon:before,
+.navicon:after {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: #ffffff;
+  transition: 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.1008s;
+}
+.navicon:before {
+  top: 9px;
+}
+.navicon:after {
+  bottom: 9px;
+}
+
+/* Hamburger Menu Animation Start */
+.menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+.menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+.menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before {
+  top: 0;
+}
+.menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  bottom: 0;
+}
+.menu-btn:checked ~ .menu-icon .navicon {
+  background: rgba(0, 0, 0, 0);
+  transition: 0.2192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.1008s;
+}
+/* Hamburger Menu Animation End */
+/* Navbar Container */
+.navtext-container {
+  width: 100%;
+  height: 52px;
+  position: absolute;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Navbar Text */
+.navtext {
+  position: absolute;
+  text-transform: uppercase;
+  color: #ffffff ;
+  letter-spacing: 4px;
+  font-size: 48px;
+  font-family: "Charm", cursive;
+  font-weight: 900;
+  font-style: normal;
+  
+}
+
+/* main */
+main{
+  margin: 0 auto;
+  background: #ffffff;
+  width: 100%;
+  max-width: 900px;  
+}
+
+.title img{
+  width: 100%;
+  object-fit: cover;
+}
+.title{
+  text-align: center;
+}
+.title h1 {
+  padding: 32px 0;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+/* contents */
+
+/* works */
+.work{
+  text-align: center;
+}
+.work h2{
+  margin-top: 120px;
+  margin-bottom: 40px;
+}
+.pic{ 
+  width: 100%;
+  height: auto;
+
+}
+.slider{
+  position: relative;
+  width: 70%;
+  height: 480px;
+  margin: 0 auto;
+  transform: rotate(-5deg);
+}
+.slide{
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  opacity: 0;
+  background-size: cover;
+  background-position: center center;
+  animation: image-switch 20s infinite;  
+  border: #1a0905 double 3px;
+}
+.only1{
+  background-image: url(単発１.jpg);
+}
+.only2{
+  background-image: url(単発2.jpg);
+}
+.only3{
+  background-image: url(単発3.jpg);
+}
+.only4{
+  background-image: url(単発4.jpg);
+}
+
+.app1{
+  background-image: url(アプリ1.jpg);
+}
+.app2{
+  background-image: url(アプリ2.jpg);
+}
+.app3{
+  background-image: url(アプリ3.jpg);
+}
+.app4{
+  background-image: url(アプリ4.jpg);
+}
+
+.kei1{
+  background-image: url(経営1.jpg);
+}
+.kei2{
+  background-image: url(経営2.jpg);
+}
+.kei3{
+  background-image: url(経営3.jpg);
+}
+.kei4{
+  background-image: url(経営4.jpg);
+}
+
+@keyframes image-switch{
+  0%{ opacity: 0;}
+  7%{ opacity: 1;}
+  30%{ opacity: 1;}
+  40%{ opacity: 0;}
+  100%{ opacity: 0;}
+}
+.slide:nth-child(1){
+  animation-delay: 0s;
+}
+.slide:nth-child(2){
+  animation-delay: 5s;
+}
+.slide:nth-child(3){
+  animation-delay: 10s;
+}
+.slide:nth-child(4){
+  animation-delay: 15s;
+}
+.pictxt{
+  margin: 40px;
+}
+.pictxt span{
+  color: #f76b4b;
+  -webkit-text-stroke-color: #1f0909;
+  -webkit-text-stroke-width: .5px;
+}
+
+/* contact */
+.contact{
+  text-align: center;
+}
+.frame{
+  display: flex;
+  width: 96%;
+  padding-bottom: 8px;
+}
+.mypic{
+  width: 48%;
+  height: auto;
+  border-radius: 4px;
+  aspect-ratio: 1/1;
+  margin: 0 2%;
+  border: #000 solid 2px;
+  background-image: url(sumple2.jpg);
+  justify-content: space-between;
+}
+.co-txt{
+  width: 48%;
+  text-align: center;
+  font-size: 3vw;
+}
+.co-txt h3{
+  font-size: 4vw;
+}
+.co-txt a{
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  display: block;
+  transition: .5s;
+  text-decoration: none;
+  color: #fff;
+  border: #000 solid 1px;
+  background-color: #030202;
+  margin-top: 4px;
+}
+.co-txt a:hover{
+  transition: .5s;
+  background-color: #fff;
+  color: #030202;
+}
+
+footer{
+  width: 100%;
+  max-width: 900px; 
+  text-align: center;
+  margin: 0 auto;
+
+}
+footer img{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  aspect-ratio: 2/1;
+  margin: 0 auto;
+}

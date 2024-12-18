@@ -21,8 +21,8 @@
       <label for="menu-btn" class="menu-icon"><span class="navicon"></span></label>
       <ul class="menu">
         <li class="top"><a href="#home">home</a></li>
-        <li><a href="#skills">profile</a></li>
-        <li><a href="#projects">plan</a></li>
+        <li><a href="#profile">profile</a></li>
+        <li><a href="#plan">plan</a></li>
         <li><a href="#contact">contact</a></li>
       </ul>
     </div>
@@ -39,21 +39,32 @@
     </ul> -->
   </header>
   <main>
-    <section class="title">
+
+    <!-- picup -->
+    <div class="picup">
+      <a href="#picup">
+        <div class="picup">
+          <p>期間限定 <br>U25プラン <br><span>→Check</span></p>
+        </div>      
+      </a>    
+    </div>
+
+
+    <!--  -->
+    <section class="title" id="home">
       <div>
         <img src="lit visual logo and txt.jpg" alt="">
       </div>
-      <h1>
+      <!-- <h1>
         Thank you for <br>visiting my site
         <br>
        
       </h1>
       <h1>
         Lit Visual の <br>HPへようこそ
-      </h1>
+      </h1> -->
     </section>
-    <hr>
-    <section class="contents">
+    <section class="contents" id="profile">
       <h2>Profile</h2>
       <div>
         <div class="mainpic"><video class="mainvideo"  src="撮影風景.mp4" autoplay muted playsinline loop><p>撮影風景です</p></video></div>
@@ -61,8 +72,7 @@
       <div>事業の説明</div>
     </section>
     <hr>
-
-    <section class="work">
+    <section class="work" id="plan">
       <h2>Plan</h2>
       <h3>単発撮影</h3>
       <div class="pic">
@@ -73,22 +83,26 @@
           <div class="slide only4"></div>
         </div>
       </div>
-      <div class="pictxt">
-        テキストが入ります
-        <span>費用の表示</span>
-      </div>
-      <h3>アプリ撮影</h3>
-      <div class="pic">
-        <div class="slider sr">
-          <div class="slide app1"></div>
-          <div class="slide app2"></div>        
-          <div class="slide app3"></div>
-          <div class="slide app4"></div>
+        <div class="pictxt">
+          テキストが入ります
+          <span>費用の表示</span>
+        </div>
+      <div>
+        <hr>
+        <h3>アプリ撮影</h3>
+        <div class="pic">
+          <div class="slider sr">
+            <div class="slide app1"></div>
+            <div class="slide app2"></div>        
+            <div class="slide app3"></div>
+            <div class="slide app4"></div>
+          </div>
+        </div>
+        <div class="pictxt">
+          テキストが入ります
         </div>
       </div>
-      <div class="pictxt">
-        テキストが入ります
-      </div>
+      <hr>
       <h3>経営者Instagram用撮影</h3>
       <div class="pic">
         <div class="slider sl">
@@ -101,14 +115,28 @@
       <div class="pictxt">
         テキストが入ります
       </div>
+      <a class="entry" href="https://lin.ee/CssWtcA" target="_blank">お申し込みはこちら</a>
+      
+
+<!-- 限定プラン -->
+      <div class="picupplan" id="picup">
+        <h3>only U25 plan</h3>
+        <div class="pictxt">
+          期間限定 <span>(2025/10/31まで)</span>
+        </div>
+        <a class="entry" href="https://lin.ee/CssWtcA" target="_blank">お申し込みはこちら</a>
+      </div>
+
+
     </section>
-    <section class="contact">
-      <h2>Contact</h2>
+    <hr>
+    <section class="contact" id="contact">
+    <h2>Contact</h2>
       <div class="frame">
         <div class="mypic"></div>
         <div class="co-txt">
-          <div><a href="" target="_blank">X(twitter)</a></div>
-          <div><a href="" target="_blank">Line</a></div>
+          <div><a href="https://twitter.com/Lit_visual" target="_blank">X(twitter)</a></div>
+          <div><a href="https://lin.ee/CssWtcA" target="_blank">Line</a></div>
           <h3>my profile</h3>
           <div>自己紹介文</div>
         </div>
@@ -118,7 +146,7 @@
   <footer>
     <img src="lit visual logo.jpg" alt="">
   </footer>
-
+  <a href="#" id="to_top"><i class="bi bi-arrow-up-circle-fill"></i></a>
   <script src="main.js"></script>
 </body>
 </html>

@@ -311,7 +311,7 @@ main{
   animation-delay: 15s;
 }
 .pictxt{
-  margin: 40px;
+  margin: 40px auto;
   text-align: left;
   font-size: 3vw;
 }

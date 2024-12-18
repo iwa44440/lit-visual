@@ -7,7 +7,8 @@ body{
   background-image: url(litvisualback.jpg);
   background-size: cover;
   background-attachment: fixed;
-  font-family: "Kaisei Decol", "Eagle Lake",serif;
+  font-family: "Yu Gothic UI","Meiryo","ヒラギノ角ゴシック","San Francisco";
+  
 
 }
 header{
@@ -19,17 +20,21 @@ header{
 }
 hr{
   border: #000 solid;
-  margin-top: 120px;
-  margin-bottom: 120px;
+  margin-top: 80px;
+  margin-bottom: 80px;
 }
 h1{
-  font-size: 6vw;
+  font-size: 7vw;
+  font-family: "Kaisei Decol", "Eagle Lake",serif;
 }
 h2{
-  font-size: 5vw;
+  font-size: 6vw;
+  margin: 80px auto;
+  font-family: "Kaisei Decol", "Eagle Lake",serif;
 }
 h3{
-  font-size: 4vw;
+  font-size: 6vw;
+  font-family: "Kaisei Decol", "Eagle Lake",serif;
 }
 .header {
   text-align: justify;
@@ -69,9 +74,9 @@ h3{
   font-size: 32px;
   text-transform: capitalize;
   color: #030202;
-  font-weight: 600;
-  -webkit-text-stroke-color: #fff;
-  -webkit-text-stroke-width: .5px;
+  font-weight: 900;
+  /* -webkit-text-stroke-color: #fff;
+  -webkit-text-stroke-width: .1px; */
   opacity: 0;
   transition: 0.5s;
 }
@@ -82,7 +87,7 @@ h3{
   transition: 0.5s;
   padding-bottom: 3px; /* テキストと下線の間隔 */
   font-size: 24px;
-  background-image: linear-gradient(#000, #000);
+  background-image: linear-gradient( #f76b4b, #f76b4b);
   background-repeat: no-repeat;
   background-position: bottom right; /* 下線の初期位置 */
   background-size: 0 2px; /* 下線のサイズ（横幅、高さ） */
@@ -90,7 +95,7 @@ h3{
 }
 .menu li:hover {
   background-position: bottom left; /* 下線のホバー時位置 */
-  background-size: 100% 1px; /* 下線の横幅を100%にする */
+  background-size: 100% 2px; /* 下線の横幅を100%にする */
 }
 .menu-btn:checked ~ .menu a,
 .menu-btn:checked ~ .menu li {
@@ -198,6 +203,7 @@ main{
 /* contents */
 .contents{
   text-align: center;
+  margin-top: 160px;
 }
 .mainpic{
   text-align: center;
@@ -212,16 +218,17 @@ main{
 }
 .work h3{
   margin-top: 160px;
-  margin-bottom: 64px;
 }
-.pic{ 
-  width: 100%;
-  height: auto;
 
+.pic{ 
+  width: 70%;
+  height: auto;
+  margin: 120px auto;
+  padding:0 4%;
 }
 .slider{
   position: relative;
-  width: 70%;
+  width: 100%;
   height: 480px;
   margin: 0 auto;
 }
@@ -305,33 +312,56 @@ main{
 }
 .pictxt{
   margin: 40px;
+  text-align: left;
+  font-size: 3vw;
 }
 .pictxt span{
+  font-size: 4vw;
   color: #f76b4b;
   -webkit-text-stroke-color: #1f0909;
   -webkit-text-stroke-width: .5px;
 }
 
+
 /* entry */
 .entry{
   width: 60%;
   padding: 16px;
-  font-size: 3vw; 
+  font-size: 3.5vw; 
   text-decoration: none;
   background-color: #fff;
   color: #000;
+  -webkit-text-stroke-color: #000000;
+  -webkit-text-stroke-width: .5px;
   display: block;
   margin: 88px auto;
   border: #000 solid 4px;
-  transition: .5s;
+  transition: .4s;
   border-radius: 8px;
+  position: relative;
+  font-family: "Kaisei Decol", "Eagle Lake",serif;
 
 }
 .entry:hover{
   
   background-color: #000;
   color: #fff;
-  transition: .5s;
+  -webkit-text-stroke-color: #ffffff;
+    -webkit-text-stroke-width: .5px;
+   span{
+    font-weight: bolder;
+    -webkit-text-stroke-color: #ffffff;
+    -webkit-text-stroke-width: 2px;
+    transition: .8s;
+
+  }
+
+}
+.entry span{
+  font-weight: bolder;
+  -webkit-text-stroke-color: #000000;
+  -webkit-text-stroke-width: 2px;
+  transition: 1s;
 
 }
 
@@ -413,7 +443,7 @@ footer img{
   width: 160px;
   height: 96px;
   background-color: #ffffff00;
-  border: #000 double 4px;
+  border: #f76b4b double 4px;
   padding: 0;
   z-index: 10;
   border-radius: 5%;
@@ -448,7 +478,16 @@ footer img{
  background-color: #ffffff;
  opacity: 1;
 }
-
+.picup-pictxt{
+  margin: 40px;
+  font-size: 3vw;
+}
+.picup-pictxt span{
+  font-size: 4vw;
+  color: #f76b4b;
+  -webkit-text-stroke-color: #1f0909;
+  -webkit-text-stroke-width: .5px;
+}
 .picupplan{
   border: #f76b4b solid 4px;
   > .pictxt{
@@ -459,5 +498,40 @@ footer img{
       border-bottom: #f76b4b solid 4px;
     }
     
+  }
+  > h3 {
+    font-size: 4vw;
+  }
+}
+@media(min-width:900px){
+  h1{
+    font-size: 6vw;
+    font-family: "Kaisei Decol", "Eagle Lake",serif;
+  }
+  h2{
+    font-size: 5vw;
+    margin: 80px auto;
+    font-family: "Kaisei Decol", "Eagle Lake",serif;
+  }
+  h3{
+    font-size: 4vw;
+    font-family: "Kaisei Decol", "Eagle Lake",serif;
+  }
+  .picbox{
+    display: flex;
+  }
+  .picboxrev{
+    flex-direction: row-reverse;
+  }
+  .pictxt{
+  padding-top:4%;
+  font-size: 1.6vw;
+  }
+  .pic{ 
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin:64px auto;
+    padding:0 4%;
   }
 }

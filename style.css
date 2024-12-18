@@ -4,6 +4,9 @@ body{
   padding: 0;
   height: auto;
   background: linear-gradient(to top,rgb(255, 83, 10),#f76b4b,rgb(255, 255, 255));
+  background-image: url(litvisualback.jpg);
+  background-size: cover;
+  background-attachment: fixed;
   font-family: "Kaisei Decol", "Eagle Lake",serif;
 
 }
@@ -20,10 +23,10 @@ hr{
   margin-bottom: 120px;
 }
 h1{
-  font-size: 8vw;
+  font-size: 6vw;
 }
 h2{
-  font-size: 6vw;
+  font-size: 5vw;
 }
 h3{
   font-size: 4vw;
@@ -309,6 +312,29 @@ main{
   -webkit-text-stroke-width: .5px;
 }
 
+/* entry */
+.entry{
+  width: 60%;
+  padding: 16px;
+  font-size: 3vw; 
+  text-decoration: none;
+  background-color: #fff;
+  color: #000;
+  display: block;
+  margin: 88px auto;
+  border: #000 solid 4px;
+  transition: .5s;
+  border-radius: 8px;
+
+}
+.entry:hover{
+  
+  background-color: #000;
+  color: #fff;
+  transition: .5s;
+
+}
+
 /* contact */
 .contact{
   text-align: center;
@@ -325,7 +351,8 @@ main{
   aspect-ratio: 1/1;
   margin: 0 2%;
   border: #000 solid 2px;
-  background-image: url(sumple2.jpg);
+  background-image: url(yamada.jpg);
+  background-size: cover;
   justify-content: space-between;
 }
 .co-txt{
@@ -354,6 +381,12 @@ main{
   color: #030202;
 }
 
+/* 色替え */
+.colorrev{
+  background: #000;
+  color: #fff;
+}
+
 footer{
   width: 100%;
   max-width: 900px; 
@@ -367,4 +400,64 @@ footer img{
   object-fit: cover;
   aspect-ratio: 2/1;
   margin: 0 auto;
+}
+
+
+
+
+/* 期間限定 */
+.picup{
+  position: fixed;
+  bottom: 5%;
+  left: 10%;
+  width: 160px;
+  height: 96px;
+  background-color: #ffffff00;
+  border: #000 double 4px;
+  padding: 0;
+  z-index: 10;
+  border-radius: 5%;
+  opacity: .7;
+  transition: .5s;
+  > a {
+    text-decoration: none;
+    color: black;
+    > p{
+      padding: 2% 6%;
+      margin: 0;
+      display: inline-block;
+      font-size: 20px;
+      font-weight: 900;
+      > span{
+        color: #f76b4b;
+      }
+    }
+  }
+  > p{
+    padding: 2% 6%;
+    margin: 0;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 900;
+    > span{
+      color: #f76b4b;
+    }
+  }
+}
+.picup:hover{
+ background-color: #ffffff;
+ opacity: 1;
+}
+
+.picupplan{
+  border: #f76b4b solid 4px;
+  > .pictxt{
+    font-size:2.5vw;
+    > span{
+      font-size: 3vw;
+      font-weight: 900;
+      border-bottom: #f76b4b solid 4px;
+    }
+    
+  }
 }

@@ -20,8 +20,13 @@ header{
 }
 hr{
   border: #000 solid;
-  margin-top: 80px;
-  margin-bottom: 80px;
+  padding: 0;
+  margin: 0;
+  
+}
+section{
+  padding-top: 40px;
+  padding-bottom: 80px;
 }
 h1{
   font-size: 7vw;
@@ -29,7 +34,7 @@ h1{
 }
 h2{
   font-size: 6vw;
-  margin: 80px auto;
+  margin: 64px auto 80px;
   font-family: "Kaisei Decol", "Eagle Lake",serif;
 }
 h3{
@@ -66,6 +71,9 @@ h3{
   transform-origin: top;
   transition: 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.1008s;
 }
+
+
+
 /* Hamburger menu text */
 .menu a {
   text-decoration: none;
@@ -97,6 +105,7 @@ h3{
   background-position: bottom left; /* 下線のホバー時位置 */
   background-size: 100% 2px; /* 下線の横幅を100%にする */
 }
+
 .menu-btn:checked ~ .menu a,
 .menu-btn:checked ~ .menu li {
   opacity: 1;
@@ -173,7 +182,9 @@ h3{
   color: #ffffff ;
   letter-spacing: 4px;
   font-size: 48px;
-  font-family: "Charm", cursive;
+  /* font-family: "Charm", cursive; */
+  font-family: "Kaisei Decol", "Eagle Lake",serif;
+
   font-weight: 900;
   font-style: normal;
 }
@@ -184,6 +195,7 @@ main{
   background: #ffffff;
   width: 100%;
   max-width: 900px;  
+  overflow: hidden;
 }
 
 .title img{
@@ -193,6 +205,7 @@ main{
 }
 .title{
   text-align: center;
+  padding-top: 0;
 }
 .title h1 {
   padding: 32px 0;
@@ -203,7 +216,6 @@ main{
 /* contents */
 .contents{
   text-align: center;
-  margin-top: 160px;
 }
 .mainpic{
   text-align: center;
@@ -213,8 +225,29 @@ main{
 
 }
 /* News */
+.news{
+  text-align: center;
+  background: #000;
+  color: #fff;
+}
+.X-contents{
+  width: 70%;
+  height: auto;
+  margin: auto;
+  > p{
+    display: inline-block;
+  }
+}
 
+.X-timeline{
+  overflow: scroll;
+  width: 100%;
+  max-width: 480px;
+  height: 320px;
+  
+  
 
+}
 /* Gallery */
 
 

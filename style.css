@@ -230,6 +230,23 @@ main{
   background: #000;
   color: #fff;
 }
+.new-content{
+  margin: 0 auto;
+  font-size: 24px;
+  padding: 24px 0 0px;
+  width: 70%;
+  border-bottom: 1px solid #ffffff;
+  > div{
+    width: 100%;
+    padding: 16px 0 16px;
+    
+  }
+}
+.new-contents{
+  font-size: 16px;
+  text-align: left;
+  border-top: 1px solid #ffffff;
+}
 .X-contents{
   width: 70%;
   height: auto;
@@ -243,7 +260,9 @@ main{
   overflow: scroll;
   width: 100%;
   max-width: 480px;
-  height: 320px;
+  height: auto;
+  aspect-ratio: 1/1.2;
+  margin: 0 auto;
   
   
 
@@ -415,6 +434,7 @@ main{
 /* contact */
 .contact{
   text-align: center;
+  padding-bottom: 4px;
 }
 .frame{
   display: flex;

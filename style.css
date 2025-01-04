@@ -612,7 +612,7 @@ footer img{
   padding: 16px;
   background: #fff;
   margin: 40px auto;
-  font-size: 3vw;
+  font-size: 16px;
   font-weight: 200;
   color: #ffffff;
   -webkit-text-stroke-color: #000000;
@@ -621,7 +621,7 @@ footer img{
 
 }
 .picup-pictxt span{
-  font-size: 4vw;
+  font-size: 24px;
   color: #f76b4b;
   -webkit-text-stroke-color: #1f0909;
   -webkit-text-stroke-width: .5px;
@@ -644,7 +644,6 @@ footer img{
     
   }
   > h3 {
-    font-size: 4vw;
     background: #ffffff;
     opacity: .8;
     width: 60%;
@@ -652,14 +651,42 @@ footer img{
     margin:48px auto;
     border-radius: 2px;
     > span{
-      font-size: 3vw;
+      font-size: 4vw;
     }
+  }
+}
+/* spstart */
+@media(max-width:600px){
+  .spstart{
+    position: absolute;
+    background: #000;
+    width: 100%;
+    height: 100vh;
+    z-index: 30;
+    text-align: center;
+    opacity: 0;
+    animation: titleback 3s;
+    > img {
+      padding-top: 25%;
+      width: 100%;
+    }
+  }
+  @keyframes titleback {
+    0%{width: 100%; opacity: .7;}
+    5%{opacity: 1;}
+    50%{opacity: 1;
+      /* backdrop-filter: blur(3px); */
+    }
+    100%{width: 100%; opacity: 0;}
   }
 }
 
 
 /* スマホ以外 */
 @media(min-width:600px){
+  .spstart{
+    display: none;
+  }
   h2,h3{
     font-size: 4vw;
   }
@@ -737,6 +764,17 @@ footer img{
   h3{
     font-size: 3vw;
     font-family: "Kaisei Decol", "Eagle Lake",serif;
+  }
+  .picupplan{
+    > h3{
+      font-size: 3vw;
+      > span {
+        font-size: 2.5vw;
+      }
+    }
+  }
+  .picup-pictxt{
+    font-size: 24px;
   }
   .picbox{
     display: flex;

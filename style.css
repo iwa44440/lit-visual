@@ -432,12 +432,12 @@ main{
 }
 .pictxt{
   padding: 8px;
-  margin: 40px auto;
+  margin: 40px 4%;
   text-align: left;
-  font-size: 3vw;
+  font-size: 16px;
 }
 .pictxt span{
-  font-size: 4vw;
+  font-size: 24px;
   color: #f76b4b;
   -webkit-text-stroke-color: #1f0909;
   -webkit-text-stroke-width: .5px;

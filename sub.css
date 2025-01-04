@@ -6,11 +6,23 @@ body{
 }
 main{
   margin: 0 auto;
-  padding-top: 20vh;
-  background: #ffffff;
+  padding: 72px 0;
   width: 100%;
-  height: 500vh;
+  height: auto;
   background: black;
+  color: #ffffff;
+}
+section{
+  padding-bottom: 72px;
+  text-align: left;
+}
+h2{
+  width: calc(100% - 64px);
+  margin: 0 auto;
+  background: #ffffff;
+  color: #000000;
+  padding: 32px;
+  font-size: 6vw;
 }
 /* header */
 header{
@@ -37,7 +49,7 @@ header{
 	overflow: hidden;
 }
 .marquee-right ul {
-	animation: marquee-right 100s linear infinite;
+	animation: marquee-right 150s linear infinite;
 	display: flex;
 	margin: 0;
 	padding: 0;
@@ -90,6 +102,11 @@ header{
 }
 /* sliderend */
 
+
+
+
+
+/* footer */
 footer{
   text-align: center;
   position: fixed;

@@ -275,6 +275,9 @@ main{
     color: #f76b4b;
   }
 }
+.contents-img{
+  display: none;
+}
 .contents > h3{
   z-index: 2;
 }
@@ -558,7 +561,8 @@ main{
   aspect-ratio: 1/1;
   margin: 0 2%;
   border: #000 solid 2px;
-  background-image: url(yamada.jpg);
+  background-image: url(plf-img.jpg);
+  background-position: 100%;
   background-size: cover;
   justify-content: space-between;
 }
@@ -770,6 +774,25 @@ footer img{
   background-size: cover;
   background-position: center;
  }
+
+.contents{
+  position: relative;
+}
+.contents-img{
+  display: inline-block;
+  position: absolute;
+  bottom: 80px;
+  right: 0;
+  width: 50%;
+  height: auto;
+  opacity: .6;
+  aspect-ratio: 1/1.1;
+  background-image:url(aboutimg.jpg);
+  background-position: 200%;
+  background-size: cover;
+}
+
+
  .marquee-right img{
   opacity: .3;
  }

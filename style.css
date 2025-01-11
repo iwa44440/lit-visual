@@ -561,7 +561,8 @@ main{
   aspect-ratio: 1/1;
   margin: 0 2%;
   border: #000 solid 2px;
-  background-image: url(yamada.jpg);
+  background-image: url(plf-img.jpg);
+  background-position: 100%;
   background-size: cover;
   justify-content: space-between;
 }

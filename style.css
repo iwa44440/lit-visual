@@ -33,12 +33,12 @@ h1{
   font-family: "Kaisei Decol", "Eagle Lake",serif;
 }
 h2{
-  font-size: 6vw;
+  font-size: 48px;
   margin: 64px auto 80px;
   font-family: "Kaisei Decol", "Eagle Lake",serif;
 }
 h3{
-  font-size: 6vw;
+  font-size: 36px;
   font-family: "Kaisei Decol", "Eagle Lake",serif;
 }
 .header {
@@ -198,20 +198,7 @@ main{
   overflow: hidden;
 }
 
-/* .title img{
-  width: 100%;
-  object-fit: cover;
-  min-height: 320px;
-}
-.title{
-  text-align: center;
-  padding-top: 0;
-}
-.title h1 {
-  padding: 32px 0;
-  margin-top: 64px;
-  margin-bottom: 32px;
-} */
+
 .mainpic{
   background: #000;
   padding:80px 0;
@@ -276,14 +263,54 @@ main{
 /* contents */
 .contents{
   text-align: center;
+  background: #000;
+  color: #fff;
+  > h2{
+    margin-bottom:16px;
+  }
+  > h3{
+    text-align: left;
+    margin: 32px 24px 16px;
+    color: #f76b4b;
+  }
 }
-.mainpic{
-  text-align: center;
+.contents > h3{
+  z-index: 2;
 }
-.mainvideo{
-  max-width: 300px;
+.subtitle{
+  font-size: 28px;
+  margin-bottom: 16px;
+}
+.about-txt{
+  text-align: left;
+  margin: 0 24px 16px;
+  position: relative;
+  z-index: 0;
+  font-size:16px;
+  > span{
+    border-bottom: #fff 1px solid;
+    font-size: 24px;
+    z-index: 0;
+    
+  }
+}
+.about-txt > span::before{
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0px 0 100px 60px;
+  border-color: transparent transparent 
+  rgb(46, 38, 38) 
+  transparent;
+  position: absolute;
+  z-index: -1;
+  transform: rotate(30deg);
+  top: -60px;
+  left: 30px;
 
 }
+
 /* News */
 .news{
   text-align: center;
@@ -522,24 +549,45 @@ main{
 .co-txt h3{
   font-size: 3vw;
 }
-.co-txt a{
+.co-icon a{
   width: 100%;
-  height: auto;
+  height: 100%;
   border-radius: 4px;
   display: block;
   transition: .5s;
   text-decoration: none;
-  color: #fff;
-  border: #000 solid 1px;
-  background-color: #030202;
-  margin-top: 4px;
+  
 }
-.co-txt a:hover{
+.co-icon:hover{
   transition: .5s;
-  background-color: #fff;
-  color: #030202;
+  opacity: 1;
 }
-
+.co-iconbox{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.co-icon{
+  width:calc((100% - 6%) / 3);
+  margin:0 1%;
+  height: auto;
+  padding: 0;
+  aspect-ratio: 1/1;
+  border-radius: 4px;
+  background-size: cover;
+  opacity: .7;
+  background-color: #030202;
+}
+.co-i-1{
+  background-image: url(ツイッターアイコンーｂ.jpg);
+}
+.co-i-2{
+  background-image:url(ラインアイコンーｂ.jpg);
+}
+.co-i-3{
+  background-image:url(インスタアイコンーｂ.jpg);
+}
 /* 色替え */
 .colorrev{
   background: #000;
@@ -551,6 +599,7 @@ footer{
   max-width: 900px; 
   text-align: center;
   margin: 0 auto;
+  padding: 0;
 
 }
 footer img{
@@ -662,7 +711,7 @@ footer img{
     background: #000;
     width: 100%;
     height: 100vh;
-    z-index: 30;
+    z-index: 15;
     text-align: center;
     opacity: 0;
     animation: titleback 3s;
@@ -764,6 +813,9 @@ footer img{
   h3{
     font-size: 3vw;
     font-family: "Kaisei Decol", "Eagle Lake",serif;
+  }
+  .subtitle{
+    font-size: 3vw;
   }
   .picupplan{
     > h3{

@@ -52,12 +52,18 @@ header{
   display: flex;
   justify-content: space-around;
 }
+.pc > .f-menu-cover{
+  background: #ffffff;
+  /* display: none; */
+  padding: 8px 2px 8px;
+}
 .f-menu-in{
   display: inline-block;
   width: 32%;
   background: #000000;
   border: 1px solid black;
   border-radius: 4px;
+  text-align: center;
   
   > a{
     width: 100%;
@@ -82,7 +88,7 @@ header{
 	overflow: hidden;
 }
 .marquee-right ul {
-	animation: marquee-right 150s linear infinite;
+	animation: marquee-right 180s linear infinite;
 	display: flex;
 	margin: 0;
 	padding: 0;
@@ -135,6 +141,82 @@ header{
 }
 /* sliderend */
 
+/* img buttun */
+.imgcontainer .imgbox{
+  max-width: 800px;
+  height: 70vh;
+  min-height: 300px;
+  position: relative;
+  border: #333 5px double;
+}
+.imgcontainer .imgbox img{
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    transition: .4s;
+}
+.imgcontainer ul{
+    border: #333 5px double;
+    height: 120px;
+    max-width: 800px;
+    padding: 8px;
+    margin-top: 8px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    overflow-x: scroll;
+    width: auto;
+}
+/* .foodcontainer ul::-webkit-scrollbar{
+  display: none;
+} */
+.imgcontainer li{
+    display: block;
+    max-width: 100px;
+    min-width: 100px;
+    height: auto;
+    aspect-ratio: 1/1;
+    list-style-type:none;
+    margin-right: 8px;
+}
+.imgcontainer li:last-child{
+  margin-right: 0;
+}
+.imgcontainer li label{
+    display:block;
+}
+.imgcontainer li img{
+    width: 100%;
+    height:auto;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+
+}
+/*ラジオボタンを非表示にする*/
+#food1,#food2,#food3,#food4,#food5{
+  display: none;
+}
+#food1:checked ~ .imgbox img:nth-child(1){
+ opacity: 1;
+}
+#food2:checked ~ .imgbox img:nth-child(2){
+ opacity: 1;
+}
+#food3:checked ~ .imgbox img:nth-child(3){
+ opacity: 1;
+}
+#food4:checked ~ .imgbox img:nth-child(4){
+  opacity: 1;
+ }
+ #food5:checked ~ .imgbox img:nth-child(5){
+  opacity: 1;
+ }
+ 
 
 
 

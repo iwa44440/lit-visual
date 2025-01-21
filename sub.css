@@ -56,6 +56,30 @@ header{
   background: #ffffff;
   /* display: none; */
   padding: 8px 2px 8px;
+  
+  
+}
+.pc > .f-menu-cover > .f-menu-in > a{
+  font-size: 36px;
+  padding: 32px 0 32px;
+  position: relative;
+  display: inline-block;
+  
+}
+.pc > .f-menu-cover > .f-menu-in > a::before{
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0px 0 90px 54px;
+  border-color: transparent transparent 
+  rgba(252, 133, 59, 0.449) 
+  transparent;
+  position: absolute;
+  transform: rotate(35deg);
+  top: -10px;
+  left: 35%;
+
 }
 .f-menu-in{
   display: inline-block;
@@ -144,16 +168,19 @@ header{
 /* img buttun */
 .imgcontainer .imgbox{
   max-width: 800px;
-  height: 70vh;
+  height:auto;
+  aspect-ratio: 1/1.2;
   min-height: 300px;
   position: relative;
   border: #333 5px double;
+  overflow: hidden;
 }
 .imgcontainer .imgbox img{
     position: absolute;
     opacity: 0;
     width: 100%;
-    height: 100%;
+    height: auto;
+    aspect-ratio: 1/1.2;
     object-fit: cover;
     top: 0;
     left: 0;
@@ -184,9 +211,7 @@ header{
     list-style-type:none;
     margin-right: 8px;
 }
-.imgcontainer li:last-child{
-  margin-right: 0;
-}
+
 .imgcontainer li label{
     display:block;
 }
@@ -198,7 +223,7 @@ header{
 
 }
 /*ラジオボタンを非表示にする*/
-#food1,#food2,#food3,#food4,#food5{
+#food1,#food2,#food3,#food4,#food5,#food6,#food7,#food8,#food9,#food10,#food11,#food12,#food13,#food14,#food15,#food16{
   display: none;
 }
 #food1:checked ~ .imgbox img:nth-child(1){
@@ -216,6 +241,39 @@ header{
  #food5:checked ~ .imgbox img:nth-child(5){
   opacity: 1;
  }
+ #food6:checked ~ .imgbox img:nth-child(6){
+  opacity: 1;
+ }
+ #food7:checked ~ .imgbox img:nth-child(7){
+  opacity: 1;
+ }
+ #food8:checked ~ .imgbox img:nth-child(8){
+  opacity: 1;
+ }
+ #food9:checked ~ .imgbox img:nth-child(9){
+   opacity: 1;
+  }
+#food10:checked ~ .imgbox img:nth-child(10){
+   opacity: 1;
+  }
+  #food11:checked ~ .imgbox img:nth-child(11){
+    opacity: 1;
+   }
+   #food12:checked ~ .imgbox img:nth-child(12){
+    opacity: 1;
+   }
+   #food13:checked ~ .imgbox img:nth-child(13){
+    opacity: 1;
+   }
+   #food14:checked ~ .imgbox img:nth-child(14){
+     opacity: 1;
+    }
+   #food15:checked ~ .imgbox img:nth-child(15){
+     opacity: 1;
+    }
+#food16:checked ~ .imgbox img:nth-child(16){
+    opacity: 1;
+  }
  
 
 
@@ -224,30 +282,133 @@ header{
 /* footer */
 footer{
   text-align: center;
-  position: fixed;
   bottom: 0;
   width: 100%;
   height: 8px;
   opacity: .9;
   z-index: 20;
   background: #ffffff;
-  padding: 4px;
   margin: 0;
  
 }
 
 
 /* size */
+.pc{
+  display: none;
+}
 @media(min-width:900px){
   h2{
     font-size: 4vw;
   }
+  .sp{
+    display: none;
+  }
+  .pc{
+    display: grid;
+  }
+  header.scrolled {
+    background:rgb(0, 0, 0);
+    > .navtext-container{
+      > .navtext{
+        color: #ffffff;
+      }
+    }
+    
+  }
+  .imgcontainer{
+    display: flex;
+    height: auto;
+    border: #333 5px double;
+
+  }
+  .imgcontainer .imgbox{
+    width: 50%;
+    border: none;
+  }
+  .imgcontainer .imgbox img{
+    padding: 3%;
+    width: 94%;
+  }
+  .imgcontainer ul{
+    border: none;
+    height: 100%;
+    max-width: 50%;
+    width: 50%;
+    padding: 3%;
+    margin-top: 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    overflow: hidden;
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+/* .foodcontainer ul::-webkit-scrollbar{
+  display: none;
+} */
+.imgcontainer ul li{
+    display: block;
+    max-width: none;
+    min-width: none;
+    width: 22%;
+    margin: .5%;
+    height: auto;
+    aspect-ratio: 1/1;
+    list-style-type:none;
+}
+.imgcontainer li label{
+    display:block;
+  
+}
+.imgcontainer li img{
+    width: 100%;
+    height:auto;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    opacity: .7;
+    transition: .7s;
+}
+.imgcontainer li img:hover{
+  opacity: 1;
+  transition: .7s;
+
+}
 }
 @media(min-width:600px){
   .navtext{
     font-size: 48px;
   }
 }
+@media(max-width:900px){
+  .imgcontainer li{
+    max-width: 100px;
+    min-width: 100px;
+}
+}
 
 
 /* section slider */
+
+
+
+/* 上に */
+header.scrolled {
+  opacity: .7;
+  
+}
+#to_top {
+  position: fixed;
+  bottom:16px;
+  right: 16px;
+  opacity: 0;
+}
+#to_top i {
+  font-size: 48px;
+  color: rgb(187, 91, 1);
+}
+#to_top.scrolled {
+  opacity: .7;
+}

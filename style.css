@@ -117,7 +117,7 @@ h3{
   opacity: 1;
   transition: 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.2s;
 }
-.menu-btn {
+.menu-btn-all {
   display: none;
 }
 .menu-icon {
@@ -566,7 +566,7 @@ main{
   aspect-ratio: 1/1;
   margin: 0 2%;
   border: #000 solid 2px;
-  background-image: url(plf-img.jpg);
+  background-image: url(yamadaprofpic.jpg);
   background-position: center;
   background-size: cover;
   justify-content: space-between;
@@ -630,15 +630,24 @@ footer{
   text-align: center;
   margin: 0 auto;
   padding: 0;
-
-}
-footer img{
+  background: #000;
+  > img{
   width: 100%;
   height: auto;
   object-fit: cover;
   aspect-ratio: 2/1;
   margin: 0 auto;
+  }
+  > div{
+    padding:16px;
+    > a{
+      text-decoration: none;
+      color: white;
+    }
+  }
 }
+
+
 
 
 

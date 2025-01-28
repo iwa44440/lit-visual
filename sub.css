@@ -29,6 +29,11 @@ h2{
   position: relative;
   z-index: 1;
 }
+h3{
+  font-size: 5vw;
+  padding-left: 32px;
+  position: relative;
+}
 
 
 /* header */
@@ -417,6 +422,13 @@ footer{
   h2{
     font-size: 4vw;
   }
+  h3{
+    font-size: 3vw;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid #333;
+    background-color:black;
+    font-weight: bold;
+  }
   .sp{
     display: none;
   }
@@ -447,6 +459,17 @@ footer{
     left: 40px;
     z-index: -1;
   
+  }
+  h3::before{
+    position: absolute;
+    top: 100%;
+    left: 128px;
+    transform: translateX(-50%) skew(-25deg);
+    height: 20px;
+    width: 20px;
+    border-right: 3px solid #333;
+    background-color: black;
+    content: "";
   }
   .imgcontainer{
     display: flex;

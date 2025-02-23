@@ -560,7 +560,7 @@ footer{
   background: rgb(187, 91, 1);
   color: rgb(240, 248, 255);
   z-index: 20;
-  font-size: 16px;
+  font-size: 20px;
   text-decoration: none;
   transition: .5s;
   font-family: "Kaisei Decol", "Eagle Lake",serif;
@@ -580,7 +580,7 @@ header.scrolled {
   opacity: 0;
 }
 #to_top i {
-  font-size: 36px;
+  font-size: 48px;
   color: rgb(187, 91, 1);
 }
 #to_top.scrolled {

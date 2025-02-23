@@ -1,0 +1,72 @@
+@charset "utf-8";
+main{
+  height: 200vh;
+}
+
+footer{
+  width: 100%;
+  max-width: 900px; 
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+  background: #000;
+  > img{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  aspect-ratio: 2/1;
+  margin: 0 auto;
+  }
+  > div{
+    padding:16px;
+    > a{
+      text-decoration: none;
+      color: white;
+    }
+  }
+}
+
+/* メインページへ */
+.backpage{
+  display: block;
+  position: fixed;
+  bottom:18px;
+  left: 16px;
+  border-radius: 6px;
+  opacity: .9;
+  background: #000;
+  color: aliceblue;
+  z-index: 20;
+  font-size: 16px;
+  font-family: "Kaisei Decol", "Eagle Lake",serif;
+  text-decoration: none;
+  transition: 0.5s;
+  padding: 4px; /* テキストと下線の間隔 */
+  background-image: linear-gradient( #f76b4b, #f76b4b);
+  background-repeat: no-repeat;
+  background-position: bottom right; /* 下線の初期位置 */
+  background-size: 0 4px; /* 下線のサイズ（横幅、高さ） */
+  transition: background-size 0.5s;
+}
+.backpage:hover {
+  background-position: top left; /* 下線のホバー時位置 */
+  background-size: 100% 100%; /* 下線の横幅を100%にする */
+}
+/* 上に */
+header.scrolled {
+  opacity: .7;
+  
+}
+#to_top {
+  position: fixed;
+  bottom:16px;
+  right: 16px;
+  opacity: 0;
+}
+#to_top i {
+  font-size: 36px;
+  color: rgb(187, 91, 1);
+}
+#to_top.scrolled {
+  opacity: .7;
+}

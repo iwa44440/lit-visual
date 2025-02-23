@@ -548,6 +548,25 @@ footer{
 /* section slider */
 
 
+/* メインページへ */
+.backpage{
+  display: block;
+  position: fixed;
+  bottom:18px;
+  left: 16px;
+  padding: 4px;
+  border-radius: 6px;
+  opacity: .7;
+  background: rgb(187, 91, 1);
+  color: rgb(240, 248, 255);
+  z-index: 20;
+  font-size: 16px;
+  text-decoration: none;
+  transition: .5s;
+  font-family: "Kaisei Decol", "Eagle Lake",serif;
+
+
+}
 
 /* 上に */
 header.scrolled {
@@ -561,9 +580,16 @@ header.scrolled {
   opacity: 0;
 }
 #to_top i {
-  font-size: 48px;
+  font-size: 36px;
   color: rgb(187, 91, 1);
 }
 #to_top.scrolled {
   opacity: .7;
+  transition: .5s;
+
+}
+
+.backpage:hover,#to_top.scrolled:hover{
+  opacity: .9;
+  transition: .5s;
 }

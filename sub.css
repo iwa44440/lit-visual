@@ -231,6 +231,7 @@ header{
     height:auto;
     object-fit: cover;
     aspect-ratio: 1/1;
+    cursor: pointer;
 
 }
 /*ラジオボタンを非表示にする*/
@@ -549,23 +550,32 @@ footer{
 
 
 /* メインページへ */
+
+
 .backpage{
   display: block;
   position: fixed;
   bottom:18px;
   left: 16px;
-  padding: 4px;
   border-radius: 6px;
-  opacity: .7;
-  background: rgb(187, 91, 1);
-  color: rgb(240, 248, 255);
+  opacity: .9;
+  background: #000;
+  color: aliceblue;
   z-index: 20;
   font-size: 20px;
-  text-decoration: none;
-  transition: .5s;
   font-family: "Kaisei Decol", "Eagle Lake",serif;
-
-
+  text-decoration: none;
+  transition: 0.5s;
+  padding: 4px; /* テキストと下線の間隔 */
+  background-image: linear-gradient( #f76b4b, #f76b4b);
+  background-repeat: no-repeat;
+  background-position: bottom right; /* 下線の初期位置 */
+  background-size: 0 4px; /* 下線のサイズ（横幅、高さ） */
+  transition: background-size 0.5s;
+}
+.backpage:hover {
+  background-position: top left; /* 下線のホバー時位置 */
+  background-size: 100% 100%; /* 下線の横幅を100%にする */
 }
 
 /* 上に */
@@ -589,7 +599,7 @@ header.scrolled {
 
 }
 
-.backpage:hover,#to_top.scrolled:hover{
+#to_top.scrolled:hover{
   opacity: .9;
   transition: .5s;
 }

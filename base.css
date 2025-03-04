@@ -62,7 +62,7 @@ h3{
   margin-top: 52px;
   padding: 0 0 10px 0;
   clear: both;
-  background: rgb(202, 178, 178);
+  background: rgb(116, 116, 116);
   transition: 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.1008s;
   transform: scale(1, 0);
   transform-origin: top;
@@ -199,4 +199,31 @@ main{
   width: 100%;
   max-width: 900px;  
   overflow: hidden;
+}
+
+/* スマホ以外 */
+@media(min-width:600px){
+
+  h2,h3{
+    font-size: 4vw;
+  }
+  .navtext{
+    font-size: 48px;
+  }
+
+}
+@media(min-width:900px){
+  h1{
+    font-size: 6vw;
+    font-family: "Kaisei Decol", "Eagle Lake",serif;
+  }
+  h2{
+    font-size: 5vw;
+    margin: 80px auto;
+    font-family: "Kaisei Decol", "Eagle Lake",serif;
+  }
+  h3{
+    font-size: 3vw;
+    font-family: "Kaisei Decol", "Eagle Lake",serif;
+  }
 }

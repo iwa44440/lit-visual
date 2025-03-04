@@ -14,8 +14,6 @@ h2{
 
 
 
-
-
 .wh-work{
 
   > div{
@@ -36,7 +34,12 @@ h2{
 }
 .box{
   border: solid 1px rgb(56, 56, 56);
-
+  > h3{
+    font-size: 24px;
+    padding-left: 5%;
+    background: aliceblue;
+    color: #000;
+  }
 }
 .inline{
   margin: 8px auto 16px;
@@ -45,12 +48,11 @@ h2{
   > div{
     width: 48%;
     margin: 0 1%;
-    text-align: center;
     > img{
       width: 100%;
     }
     > p{
-      padding: 4px auto;
+      padding-left: 10%;
       font-size: 24px;
       display: inline-block;
     }

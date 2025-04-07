@@ -573,28 +573,32 @@ footer{
 /* 期間限定 */
 .picup{
   position: fixed;
-  bottom: 5%;
-  left: 10%;
-  width: 160px;
-  height: 96px;
-  background-color: #ffffff00;
+  bottom: 2%;
+  left: 5%;
+  width: 250px;
+  height: 64px;
+  background-color: #ffffff45;
   border: #f76b4b double 4px;
   padding: 0;
   z-index: 10;
   border-radius: 5%;
-  opacity: .7;
   transition: .5s;
   > a {
     text-decoration: none;
     color: black;
+    font-size: 20px;
+    font-weight: 900;
     > p{
-      padding: 2% 6%;
+      padding: 2% 0;
       margin: 0;
       display: inline-block;
-      font-size: 20px;
-      font-weight: 900;
+      
+      
       > span{
         color: #f76b4b;
+        -webkit-text-stroke-color: #ffffff00;
+
+
       }
     }
   }
@@ -623,7 +627,6 @@ footer{
   color: #000000;
   -webkit-text-stroke-color: #000000;
   -webkit-text-stroke-width: .5px;
-  opacity: .9;
 
 }
 .picup-pictxt span{

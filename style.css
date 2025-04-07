@@ -3,11 +3,11 @@
 /* main */
 
 
-
 .mainpic{
   background: #000;
   padding:80px 0;
   position: relative;
+  z-index: 2;
 }
 .mainpic > h2{
   position: absolute;
@@ -543,6 +543,7 @@
 }
 
 footer{
+  z-index: 2;
   width: 100%;
   max-width: 900px; 
   text-align: center;
@@ -580,7 +581,7 @@ footer{
   background-color: #ffffff45;
   border: #f76b4b double 4px;
   padding: 0;
-  z-index: 10;
+  z-index: 1;
   border-radius: 5%;
   transition: .5s;
   > a {
